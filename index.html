@@ -1,1 +1,193 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adriana Reyna Lara</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/images/Netss.jpeg');
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#papers" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Papers</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#teaching" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Teaching</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-xxxlarge"><b>Adriana Reyna</b></h1>
+    <p>Researcher in Complex Systems & Networks.</p>
+    <img src="/images/Netss.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/images/Netss.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>I am a physicist trying to understand the complexities of our universe. In today's era of abundant data, I am interested in using this information to comprehend how various interconnected systems function together. My focus lies in exploring how collective phenomena emerge, adapt, evolve, and endure through changes. I study Complex Systems, primarily developing models for epidemic spreading, but I have also worked on non-linear random walks. 
+      Currently, I am working at Tecnológico de Monterrey as a lecturer for engineers. I teach intensive introductory physics courses, covering topics such as mechanics, thermodynamics, electrostatics, electromagnetism, and statistics. </p>
+    <h3 class="w3-padding-16">Research interests</h3>
+    <p class="w3-wide">Complex Networks</p>
+    <div class="w3-light-grey">
+    </div>
+    <p class="w3-wide">Nonlinear Dynamics</p>
+    <div class="w3-light-grey">
+    </div>
+    <p class="w3-wide">Diffusion Processes</p>
+    <div class="w3-light-grey">
+    </div>
+    <p class="w3-wide">Resources Distribution</p>
+    <div class="w3-light-grey">
+    </div><br>
+
+
+    
+    <!-- Grid for Teaching -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="teaching">
+    <h3 class="w3-padding-16">Teaching</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <!-- Grid for teaching -->
+     <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a target="_blank" ><img src="/images/teaching.004.jpeg" style="width:100%"></a>
+        <a target="_blank" ><img src="/images/teaching.002.jpeg" style="width:100%"></a>
+      </div>
+
+      <div class="w3-half">
+        <a target="_blank" ><img src="/images/teaching.003.jpeg" style="width:100%"></a>
+        <a target="_blank" ><img src="/images/teaching.001.jpeg" style="width:100%"></a>
+      </div>
+    <!-- End teaching grid -->
+    </div>
+
+      
+    <!-- End Teaching tables -->
+    </div>
+    </div><br>  
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a style="text-decoration:none" href="https://adrianaryl.github.io/assets/doc/ARL_CV_23.pdf"><i class="fa fa-download"></i> Download Resume</a>
+    </button>
+
+
+      <!-- Papers Section -->
+  <div class="w3-padding-32 w3-content" id="papers">
+    <h2 class="w3-text-grey">Papers</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for papers -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a target="_blank" href="https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.2.013312"><img src="/images/ER.jpeg" style="width:100%"></a>
+        <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0960077922002223"><img src="/images/AMP.jpeg" style="width:100%"></a>
+        <a target="_blank" href="https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.3.013163"><img src="/images/TTT.jpeg" style="width:100%"></a>
+      </div>
+
+      <div class="w3-half">
+        <a target="_blank" href="https://pubs.aip.org/aip/cha/article-abstract/32/4/041105/2835607/A-metapopulation-approach-to-identify-targets-for?redirectedFrom=fulltext"><img src="/images/WMP.jpeg" style="width:100%"></a>
+        <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0960077922002223"><img src="/images/AMP-01.jpeg" style="width:100%"></a>
+      </div>
+    <!-- End paper grid -->
+    </div>
+  <!-- End Paper Section -->
+  </div>
+    
+
+
+    
+    <!-- Network -->
+    <h3 class="w3-padding-24">Network</h3>
+    <img src="/images/gardenes.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <a target="_blank" style="text-decoration:none" href="https://scholar.google.com/citations?user=M9cpyEIAAAAJ&hl=en"><p><span class="w3-large w3-text-black w3-margin-right">Prof. Jesús Gómez Gardeñes.</span> Universidad de Zaragoza.</p>
+    <p>PHD supervisor.</p></a><br>
+   
+    <img src="/images/alex.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <a target="_blank" style="text-decoration:none" href="https://scholar.google.es/citations?user=MNvzmN4AAAAJ&hl=es"><p><span class="w3-large w3-text-black w3-margin-right">Prof. Alex Arenas.</span> Universitat Rovira i Virgili.</p>
+    <p>Collaborator.</p></a><br>
+    
+    <img src="/images/soriano.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <a target="_blank" style="text-decoration:none" href="https://scholar.google.es/citations?user=_vuwmTgAAAAJ&hl=es"><p><span class="w3-large w3-text-black w3-margin-right">David Soriano Paños.</span> Universitat Rovira i Virgili.</p>
+    <p>Collaborator.</p></a><br>
+
+    <img src="/images/Santiago.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <a target="_blank" style="text-decoration:none" href="https://scholar.google.es/citations?user=tXGb3D8AAAAJ&hl=es"><p><span class="w3-large w3-text-black w3-margin-right">Santiago Lamata Otín.</span> Universidad de Zaragoza.</p>
+    <p>Collaborator.</p></a><br>
+    
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact </h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p></i> Institutional e-mail address: a [dot] reyna [at] tec [dot] mx </p>
+      <p></i> Permanent e-mail address: adriana [dot] ryl [at] gmail [dot] com  </p>
+    </div>
+    
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a target="_blank" href="https://github.com/AdrianaRyL"><i class="fa fa-github w3-hover-opacity" ></i></a>
+    <a target="_blank" href="https://twitter.com/adrianaryl"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a target="_blank" href="https://scholar.google.com.ph/citations?user=uqY6jaoAAAAJ&hl=es"><i class="fa fa-x-twitter w3-hover-opacity"></i></a>
+    <!--i class="fa fa-linkedin w3-hover-opacity"></i-->
+    <p class="w3-medium">© Adriana Reyna. <a target="_blank" style="text-decoration:none" class="w3-hover-text-green" href="https://github.com/AdrianaRyL"> All rights reserved. </a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
